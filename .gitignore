@@ -1,2 +1,10 @@
 fuel/app/logs/*/*/*
 fuel/app/cache/*/*
+*.gif
+*.png
+*.woff
+*.ttf
+*.svg
+*.otf
+*.eot
+*~
