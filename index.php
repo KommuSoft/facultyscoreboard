@@ -28,17 +28,21 @@
 
       <div class="row-fluid marketing">
         <div class="span3">
-          <h4>Scorebord</h4>
-          <p>
+          <!--<h4>Scorebord</h4>
+          <p>-->
           <?php
-          $query = "SELECT text from teksten";
+          $query = "SELECT id,text from teksten";
           $rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
           $rows = pg_fetch_all($rs);
           pg_close($con);
-          echo $rows[0]['text'];
+          $hasha = array();
+          foreach($rows as $row) {
+          #	array_push($hasha,$row['id'] => $row['text']);
+          }
+          #echo $hasha["0"];
           ?>
-          </p>
-              <div class="btn-group">
+          <!--</p>-->
+              <!--<div class="btn-group">
 			    <button class="btn btn-primary btn-large">Scorebord</button>
 			    <button class="btn btn-primary btn-large dropdown-toggle" data-toggle="dropdown">
 			    <span class="caret"></span>
@@ -48,34 +52,35 @@
 			    	<li><a href="scorebord.php?tab=riching">Richting</a></li>
 			    	<li><a href="scorebord.php?tab=individu">Richting</a></li>
 			    </ul>
-			</div>
+			</div>-->
+		    <p align="center"><a class="btn btn-large" href="scorebord.php">Scorebord</a></p>
         </div>
         <div class="span3">
-          <h4>Laatste uitslagen</h4>
-          <p>
+          <!--<h4>Laatste uitslagen</h4>
+          <p>-->
           <?php
-          echo $rows[1]['text'];
+          #echo $hasha["1"];
           ?>
-          </p>
-          <a class="btn btn-large">Uitslagen</a>
+          <!--</p>-->
+          <p align="center"><a class="btn btn-large" href="uitslagen.php">Uitslagen</a></p>
         </div>
         <div class="span3">
-          <h4>Sponsors</h4>
-          <p>
+          <!--<h4>Sponsors</h4>
+          <p>-->
           <?php
-          echo $rows[2]['text'];
+          #echo $hasha["2"];
           ?>
-          </p>
-			<a class="btn btn-large">Sponsors</a>          
+          <!--</p>-->
+			<p align="center"><a class="btn btn-large" href="sponsors.php">Sponsors</a></p>
         </div>
         <div class="span3">
-          <h4>Over</h4>
-          <p>
+          <!--<h4>Over</h4>
+          <p>-->
           <?php
-          echo $rows[3]['text'];
+          #echo $hasha["3"];
           ?>
-          </p>
-          <a class="btn btn-large">Over</a>
+          <!--</p>-->
+	          <p align="center"><a class="btn btn-large" href="about.php">Over</a></p>
         </div>
       </div>
 

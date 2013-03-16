@@ -13,6 +13,7 @@ $richtingen = pg_fetch_all($rs);
 $totalr = 0;
 $query = "SELECT richid, discipline, sum FROM richpuntensum";
 $rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
+$puntenr=array();
 while($row = pg_fetch_row($rs)) {
 	$puntenr[$row[0]][$row[1]] = $row[2];
 	$totalr = $totalr+$row[2];

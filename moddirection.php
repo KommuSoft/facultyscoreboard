@@ -4,7 +4,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 	#perform the query
 	$id=addslashes($_POST['md_id']);
 	$name=addslashes($_POST['md_name']);
-	$faculteit=addslashes($_POST['md_facid']);
+	$faculteit=addslashes($_POST['md_faculty']);
 	$query = "UPDATE richtingen SET (faculteit,name) = ('$faculteit','$name') WHERE id='$id'";
 	$rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
 }

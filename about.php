@@ -24,19 +24,15 @@
       </div>
       
       <div id="grid" class="span12"><div class="row-fluid">
-        <div class="span3 offset1" align="justify">
-        De activiteit "24u KULAK Olympics FAKBATTLE" start woensdag 13 maart om 18u30, loopt 24u non-stop verder (eindigen doen we donderdag natuurlijk ook om 18u30)
-        en wordt enkele uren later in de nacht van donderdag 14 en vrijdag 15 maart definitief afgesloten door een grote 24-uursfuif (die duurt weliswaar geen 24 uur,
-        maar vindt plaats van 22u tot 5u in de KULAK in Hal A).
+	    <div class="span1" align="justify">&nbsp;</div>
+        <div class="span3" align="justify">
+        De activiteit "24u KULAK Olympics FAKBATTLE" start woensdag 13 maart om 18u30 en loopt 24u non-stop verder (eindigen doen we donderdag natuurlijk ook om 18u30) en wordt dus in de nacht van donderdag op vrijdag definitief afgesloten door een grote 24-uursfuif: de Olympic Party (die duurt weliswaar geen 24 uur, maar vindt plaats van 22u tot 5u in de KULAK in Hal A).
         </div>
         <div class="span3" align="justify">
-        Dit jaar staat de activiteit: "24u KULAK Olympics FAKBATTLE" in het teken van een competitiestrijd tussen de faculteiten, richtingen en studenten. Ze kunnen punten
-        verdienen door deel te nemen aan <a href="activiteiten.php">activiteiten</a> die 24 uur toegankelijk zijn door hun tegenstanders te verslaan (van gocartraces,
-        sumoworstelen, human table football tot zorbball).
+        Dit jaar staat de activiteit: "24u KULAK Olympics FAKBATTLE" in het teken van een competitiestrijd tussen de faculteiten, richtingen en studenten. Ze kunnen punten verdienen door deel te nemen aan <a href="activiteiten.php">activiteiten</a> (die 24 uur toegankelijk zijn) door hun tegenstanders te verslaan (van gocartraces, sumoworstelen, human table football tot zorbball)
         </div>
         <div class="span3" align="justify">
-        Het is het hoogtepunt van een week waarin de opbrengst integraal naar het goede doel gaat: dit jaar zetten we ons in voor een project in Tanzania van Fracarita Belgium
-        (het vroegere Caraes) waar weeskinderen onderwijs en medische verzorging krijgen. Op deze website kunnen de faculteiten de tussenstand volgen.
+        Het is samen met de afsluitende “Hal A-fuif” het hoogtepunt van een week waarin de opbrengst integraal naar het goede doel gaat: dit jaar zetten we ons in voor een project in Tanzania van Fracarita Belgium (het vroegere Caraes) waar weeskinderen onderwijs en medische verzorging krijgen.
         </div>
       </div>
 

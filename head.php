@@ -42,9 +42,9 @@
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
     <link href="css/bootstrap-editable.css" rel="stylesheet">
-    <script src="js/bootstrap-editable.js"></script>
     <script src="js/jquery.js" type="text/javascript"></script>
     <script src="js/jquery.dataTables.js" type="text/javascript"></script>
+    <script src="js/bootstrap-editable.js"></script>
     <script type="text/javascript" src="js/bootstrap-tab.js"></script>
     <script type="text/javascript" src="js/bootstrap-editable.js"></script>
 

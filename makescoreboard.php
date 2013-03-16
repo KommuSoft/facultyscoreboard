@@ -10,7 +10,7 @@ function cmp($a, $b) {
 function makescoreboard ($columns, $rowtypes, $rows, $values, $total) {
 	echo '<table class="table table-striped table-hover table-condensed table-bordered"><thead><tr><th style="vertical-align:middle; text-align:center;">#</th><th>'.$rowtypes.'</th>';
 	foreach($columns as $col) {
-	  echo '<th class="numeric" style="vertical-align:middle; text-align:right;"><img src="img/disciplines/'.$col['imagefilename'].'" alt="'.$col['name'].'" title="'.$col['name'].'" width="24" height="24"/></th>';
+	  echo '<th class="numeric" style="vertical-align:middle; text-align:right;">'.$col['name'].'</th>';
 	}
 	echo '<th class="numeric" style="vertical-align:middle; text-align:right;"><img src="img/sigma.png" width="24" height="24" alt="som" title="som"></th></tr></thead>';#<th width=100></th>
 	$rank = 1;
@@ -59,23 +59,26 @@ function makescoreboard ($columns, $rowtypes, $rows, $values, $total) {
 		echo '<td align="right" valign="middle" class="numeric" style="vertical-align:middle; text-align:right;"><b>'.$sum.'</b></td></tr>';#<td valign="middle" style="vertical-align:middle;"><div class="progress" valign="middle" style="vertical-align:middle height:10px;"><div class="bar" style="width: '.floor(100*$sum/$total).'%;"/></div></td>
 		$rank = $rank+1;
 	}
-	echo '</table><br><div class="progress" id="prgbar" width="100%">';
-	$colors = array('info','success','warning','danger');
-	$i = 0;
-	foreach($rows as $row) {
-		$ri = $row['id'];
-		if(array_key_exists($ri, $values)) {
-			$sum = $values[$ri]['sum'];
-			$rn = $row['name'];
-			$p = 100*$sum/$total;
-			$el = $colors[$i];
-			$i = $i+1;
-			if($i >= count($colors)) {
-				$i = 0;
+	echo '</table><br>';
+	if($total > 0) {
+		echo '<div class="progress" id="prgbar" width="100%">';
+		$colors = array('info','success','warning','danger');
+		$i = 0;
+		foreach($rows as $row) {
+			$ri = $row['id'];
+			if(array_key_exists($ri, $values)) {
+				$sum = $values[$ri]['sum'];
+				$rn = $row['name'];
+				$p = 100*$sum/$total;
+				$el = $colors[$i];
+				$i = $i+1;
+				if($i >= count($colors)) {
+					$i = 0;
+				}
+				echo "<div title=\"$rn\" class=\"bar bar-$el\" style=\"width: $p%;\" id=\"prgwidth\">$rn</div>";
 			}
-			echo "<div title=\"$rn\" class=\"bar bar-$el\" style=\"width: $p%;\" id=\"prgwidth\">$rn</div>";
 		}
+		echo '</div>';
 	}
-	echo '</div>';
 }
 ?>

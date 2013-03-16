@@ -13,6 +13,7 @@ $studenten = pg_fetch_all($rs);
 $totalf = 0;
 $query = "SELECT student, discipline, sum FROM stupuntensum";
 $rs = pg_query($con, $query) or die("Cannot execute query: $query\n");
+$puntenf=array();
 while($row = pg_fetch_row($rs)) {
 	$puntenf[$row[0]][$row[1]] = $row[2];
 	$totalf = $totalf+$row[2];
